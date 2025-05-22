@@ -1,4 +1,4 @@
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
     {
         tipo:"espresso",
         ingredientes:["vainilla-canela"],
@@ -10,7 +10,7 @@ db.cafeteria.insertOne(
         contieneLeche:false,
         tostador:{localidad:"avellaneda",nombre:"cafeteriaaaa",cuit:"20224224"}
     })
-db.cafeteria.insertOne( 
+db.cafesespeciales.insertOne( 
         {
         tipo:"filtrado",
         ingredientes:["vainilla-canela","chocolate"],
@@ -23,7 +23,7 @@ db.cafeteria.insertOne(
         contieneLeche:true,
         tostador:{localidad:"avellaneda",nombre:"cafeteriaaaa",cuit:"20224224"}
     })
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"cold brew",
         ingredientes:["caramelo","chocolate"],
@@ -36,7 +36,7 @@ db.cafeteria.insertOne(
         contieneLeche:false,
         tostador:{localidad:"quilmes",nombre:"cafeteriaaaa",cuit:"20224224"}
     })
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"descafeinado",
         ingredientes:["vainilla-canela"],
@@ -49,7 +49,7 @@ db.cafeteria.insertOne(
         contieneLeche:true,
         tostador:{localidad:"barracas",nombre:"cafeteriaaaa",cuit:"20224224"}
     })
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"espresso",
         ingredientes:["vainilla-canela"],
@@ -62,7 +62,7 @@ db.cafeteria.insertOne(
         contieneLeche:false,
         tostador:{localidad:"dock-sud",nombre:"cafeteriaaaa",cuit:"20224224"}
     })
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"espresso",
         ingredientes:["vainilla-canela","chocolate"],
@@ -75,7 +75,7 @@ db.cafeteria.insertOne(
         contieneLeche:true,
         tostador:{localidad:"barracas",nombre:"alsdkjlasdj",cuit:"21120224224"}
     })
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"espresso",
         ingredientes:["chocolate","caramelo"],
@@ -87,7 +87,7 @@ db.cafeteria.insertOne(
         contieneLeche:false,
         tostador:{localidad:"tigre",nombre:"local",cuit:"1115234354"}
     })
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"espresso",
         ingredientes:["chocolate"],
@@ -99,7 +99,7 @@ db.cafeteria.insertOne(
         contieneLeche:true,
         tostador:{localidad:"avellaneda",nombre:"miscafeterias",cuit:"210224224"}
     })
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"espresso",
         ingredientes:["con leche"],
@@ -111,7 +111,7 @@ db.cafeteria.insertOne(
         contieneLeche:true,
         tostador:{localidad:"quilmes",nombre:"cafeteriaaaa",cuit:"20224224"}
     })
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"espresso",
         ingredientes:["ninguno"],
@@ -124,7 +124,7 @@ db.cafeteria.insertOne(
         tostador:{localidad:"san justo",nombre:"AAAAAAA",cuit:"3045545687"}
     }
 )
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"cold brew",
         ingredientes:["vainilla"],
@@ -137,7 +137,7 @@ db.cafeteria.insertOne(
         tostador:{localidad:"san jose",nombre:"asdasddsa",cuit:"3045545687"}
     }
 ),
-db.cafeteria.insertOne(
+db.cafesespeciales.insertOne(
         {
         tipo:"cold brew",
         ingredientes:["vainilla"],
@@ -148,5 +148,18 @@ db.cafeteria.insertOne(
         ],
         contieneLeche:false,
         tostador:{localidad:"san pedro",nombre:"HOLA",cuit:"30545687"}
+    }
+)
+db.cafesespeciales.insertOne(
+        {
+        tipo:"cold brew",
+        ingredientes:["vainilla"],
+        peso:250,
+        intensidad:"bajo",
+        precio:[
+            {tipo:"efectivo",precio:400}
+        ],
+        contieneLeche:false,
+        tostador:{localidad:"santos",nombre:"HOLA",cuit:"30545687"}
     }
 )
