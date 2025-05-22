@@ -28,7 +28,7 @@ db.cafesespeciales.insertOne(
         tipo:"cold brew",
         ingredientes:["caramelo","chocolate"],
         peso:356,
-        intensidad:"media",
+        intensidad:"alta",
         precio:[
             {tipo:"efectivo",precio:400},
             {tipo:"tarjeta",precio:500}
@@ -41,7 +41,7 @@ db.cafesespeciales.insertOne(
         tipo:"descafeinado",
         ingredientes:["vainilla-canela"],
         peso:150,
-        intensidad:"alto",
+        intensidad:"alta",
         precio:[
             {tipo:"efectivo",precio:400},
             {tipo:"tarjeta",precio:410}
@@ -67,7 +67,7 @@ db.cafesespeciales.insertOne(
         tipo:"espresso",
         ingredientes:["vainilla-canela","chocolate"],
         peso:670,
-        intensidad:"media",
+        intensidad:"alta",
         precio:[
             {tipo:"efectivo",precio:400},
             {tipo:"tarjeta",precio:500}

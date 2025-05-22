@@ -20,4 +20,12 @@ db.cafesespeciales.find({"tostador.localidad":/san/i},{tipo:1,peso:1,"tostador.l
 
 //7
 
-db.cafesespeciales
+db.cafesespeciales.aggregate([ {$group:{_id:"$tipo",totalPeso:{$sum:"$peso"}}}  ])
+
+//8
+
+db.cafesespeciales.updateMany({intensidad:{$eq:'alta'}}, {$addToSet:{ingredientes:"whisky"}})
+
+//9
+
+db.cafesespeciales.aggregate([ {$match:{peso:{$gte:200}  }}  ])
