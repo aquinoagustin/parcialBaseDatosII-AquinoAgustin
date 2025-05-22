@@ -1,3 +1,4 @@
+use cafeteria
 db.cafesespeciales.insertOne(
     {
         tipo:"espresso",

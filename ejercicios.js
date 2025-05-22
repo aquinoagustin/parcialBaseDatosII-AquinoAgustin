@@ -12,7 +12,7 @@ db.cafesespeciales.aggregate([{$match:{intensidad:{$eq:'media'}  }}  ,{ $project
 
 //5
 
-db.cafesespeciales.aggregate([{$match:{peso:{$gte:200,$lte:260}  }}  ,{ $project:{_id:0,tipo:1,peso:1,intensidad:1}        }])
+db.cafesespeciales.aggregate([{$match:{peso:{$gte:200,$lte:260}  }}  ,{ $project:{_id:0,tipo:1,peso:1,intensidad:1}  }])
 
 //6
 
@@ -28,4 +28,8 @@ db.cafesespeciales.updateMany({intensidad:{$eq:'alta'}}, {$addToSet:{ingrediente
 
 //9
 
-db.cafesespeciales.aggregate([ {$match:{peso:{$gte:200}  }}  ])
+db.cafesespeciales.updateMany({peso:      {$gte:200,$lte:260}},{$inc:{peso:10}}  )
+
+//10
+//db.cafesespeciales.find({peso:{$lte:210}}) -> Comprobacion antes de mandarme una cagada
+db.cafesespeciales.deleteMany({peso:{$lte:210}})
